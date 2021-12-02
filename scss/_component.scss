@@ -1,0 +1,54 @@
+.logo {
+    @include felexlayout;
+    font-size: 80px;
+    color: $color-primary;
+    width: 110px;
+    height: 110px;
+    border: 3px solid $color-primary;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+.main-name {
+    font-family: $font-sahel;
+    font-size: 50px;
+    color: $color-secoundary;
+    @include textStyle;
+}
+.sub-name {
+    @include textStyle;
+    font-family: $font-nastaliq;
+    font-size:50px;
+    color: $color-primary;
+    text-align: center;
+}
+.main-heading {
+    font-family: $font-sahel;
+    font-size: 80px;
+    font-weight: 300px;
+    color: $color-primary;
+    margin-bottom:40px ;
+}
+.sub-heading {
+    font-family: $font-nastaliq;
+    font-size: 60px;
+    font-weight: 300;
+    color: $color-secoundary;
+    margin-bottom: 50px;
+}
+.main-btn {
+    width: 200px;
+    height: 50px;
+    font-family: $font-sahel;
+    font-size: 30px;
+    background-color: transparent;
+    border: 1px solid $color-primary;
+    cursor: pointer;
+    transition: all 0.4s;
+    color: $color-primary;
+    padding-bottom: 10px;
+    border-radius: 4px;
+    &:hover {
+        background-color: $color-primary;
+        color: $color-dark;
+    }
+}
