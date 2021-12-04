@@ -16,20 +16,20 @@
 }
 .sub-name {
     @include textStyle;
-    font-family: $font-nastaliq;
-    font-size:50px;
-    color: $color-primary;
+    font-family: $font-sahel;
+    font-size:20px;
+    color: $color-secoundary;
     text-align: center;
 }
 .main-heading {
-    font-family: $font-sahel;
+    font-family: $font-nastaliq;
     font-size: 80px;
-    font-weight: 300px;
+    font-weight: 300;
     color: $color-primary;
     margin-bottom:40px ;
 }
 .sub-heading {
-    font-family: $font-nastaliq;
+    font-family: $font-sahel;
     font-size: 60px;
     font-weight: 300;
     color: $color-secoundary;
@@ -39,16 +39,43 @@
     width: 200px;
     height: 50px;
     font-family: $font-sahel;
-    font-size: 30px;
+    font-size: 20px;
     background-color: transparent;
     border: 1px solid $color-primary;
     cursor: pointer;
     transition: all 0.4s;
     color: $color-primary;
-    padding-bottom: 10px;
+    padding-bottom: 7px;
     border-radius: 4px;
     &:hover {
         background-color: $color-primary;
         color: $color-dark;
+    }
+}
+.main-heading {
+    font-size:80px;
+    margin-bottom: 20px;
+}
+
+.sub-heading {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.starts {
+    margin: 30px 0;
+    font-size: 15px;
+    color: $color-primary;
+    .star {
+        margin-left: 10px;
+    }
+}
+.description {
+    font-family: $font-nastaliq;
+    font-size: 25px;
+    color: $color-secoundary;
+    text-align: justify;
+    &::first-letter {
+        padding-right: 30px;
     }
 }
