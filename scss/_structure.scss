@@ -31,6 +31,10 @@ $font-nastaliq: Nastaliq, Tahoma;
     left: 50%;
     transform: translate(-50%,-50%);
 }
+%fullspace {
+    width: 100%;
+    height: 100%;
+}
 * {
     padding: 0;
     margin: 0;

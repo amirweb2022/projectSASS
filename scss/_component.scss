@@ -79,3 +79,55 @@
         padding-right: 30px;
     }
 }
+.mg-btn {
+    margin-bottom: 30px;
+}
+.card {
+    width: 33.3%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+    &:hover .crad-overlay{
+        left: 0;
+    }
+   .crad-overlay {
+       @extend %fullspace;
+       @include felexlayout;
+       flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: -100%;
+        color: #fff;
+        background-color: rgba($color-primary, 0.6);
+        z-index: 20;
+        transition: all 0.5s;
+
+        .card-overlay-heading {
+            @include textStyle;
+            font-family: $font-nastaliq;
+            font-size: 70px;
+        }
+        .card-overlay-paragraph {
+            @include textStyle;
+            font-family: $font-sahel;
+            font-size: 20px;
+            margin-bottom: 30px
+        }
+        .card-overlay-btn {
+            width: 150px;
+            height: 40px;
+            color: $color-primary;
+            background-color: #fff;
+            border: 1px solid $color-primary;
+            font-family: $font-sahel;
+            font-size: 15px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+    }
+    &-img {
+        @extend %fullspace;
+        object-fit: cover;
+        opacity: 0.5;
+    }
+}

@@ -10,6 +10,11 @@
   font-weight: normal;
 }
 
+.card .crad-overlay, .card-img {
+  width: 100%;
+  height: 100%;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -69,6 +74,11 @@ body {
   padding: 0px 80px;
   box-sizing: border-box;
   direction: rtl;
+}
+
+.gallery .cards-wrapper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .logo {
@@ -165,5 +175,66 @@ body {
 
 .description::first-letter {
   padding-right: 30px;
+}
+
+.mg-btn {
+  margin-bottom: 30px;
+}
+
+.card {
+  width: 33.3%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover .crad-overlay {
+  left: 0;
+}
+
+.card .crad-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: -100%;
+  color: #fff;
+  background-color: rgba(211, 171, 85, 0.6);
+  z-index: 20;
+  transition: all 0.5s;
+}
+
+.card .crad-overlay .card-overlay-heading {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: Nastaliq, Tahoma;
+  font-size: 70px;
+}
+
+.card .crad-overlay .card-overlay-paragraph {
+  font-weight: 300;
+  letter-spacing: 1px;
+  font-family: Sahel, Tahoma;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.card .crad-overlay .card-overlay-btn {
+  width: 150px;
+  height: 40px;
+  color: #d3ab55;
+  background-color: #fff;
+  border: 1px solid #d3ab55;
+  font-family: Sahel, Tahoma;
+  font-size: 15px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.card-img {
+  object-fit: cover;
+  opacity: 0.5;
 }
 /*# sourceMappingURL=main.css.map */
