@@ -81,6 +81,20 @@ body {
   flex-wrap: wrap;
 }
 
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.footer-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+  margin-top: 40px;
+}
+
 .logo {
   display: flex;
   justify-content: center;
@@ -236,5 +250,47 @@ body {
 .card-img {
   object-fit: cover;
   opacity: 0.5;
+}
+
+.social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.social-media-item {
+  list-style-type: none;
+}
+
+.social-media-link {
+  text-decoration: none;
+  font-size: 50px;
+  color: #bbb;
+  transition: all 0.3s;
+}
+
+.social-media-link:hover {
+  color: #d3ab55;
+}
+
+.footer-copyright-paragraph {
+  font-family: Sahel, Tahoma;
+  font-size: 20px;
+  direction: rtl;
+  color: #bbb;
+  margin-bottom: 15px;
+}
+
+.main-foot {
+  font-size: 50px;
+  font-family: Sahel, Tahoma;
+  color: #bbb;
+}
+
+.sub-foot {
+  font-size: 20px;
+  color: #bbb;
+  text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

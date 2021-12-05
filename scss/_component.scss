@@ -1,133 +1,168 @@
 .logo {
-    @include felexlayout;
-    font-size: 80px;
-    color: $color-primary;
-    width: 110px;
-    height: 110px;
-    border: 3px solid $color-primary;
-    border-radius: 50%;
-    margin-right: 20px;
+  @include felexlayout;
+  font-size: 80px;
+  color: $color-primary;
+  width: 110px;
+  height: 110px;
+  border: 3px solid $color-primary;
+  border-radius: 50%;
+  margin-right: 20px;
 }
 .main-name {
-    font-family: $font-sahel;
-    font-size: 50px;
-    color: $color-secoundary;
-    @include textStyle;
+  font-family: $font-sahel;
+  font-size: 50px;
+  color: $color-secoundary;
+  @include textStyle;
 }
 .sub-name {
-    @include textStyle;
-    font-family: $font-sahel;
-    font-size:20px;
-    color: $color-secoundary;
-    text-align: center;
+  @include textStyle;
+  font-family: $font-sahel;
+  font-size: 20px;
+  color: $color-secoundary;
+  text-align: center;
 }
 .main-heading {
-    font-family: $font-nastaliq;
-    font-size: 80px;
-    font-weight: 300;
-    color: $color-primary;
-    margin-bottom:40px ;
+  font-family: $font-nastaliq;
+  font-size: 80px;
+  font-weight: 300;
+  color: $color-primary;
+  margin-bottom: 40px;
 }
 .sub-heading {
-    font-family: $font-sahel;
-    font-size: 60px;
-    font-weight: 300;
-    color: $color-secoundary;
-    margin-bottom: 50px;
+  font-family: $font-sahel;
+  font-size: 60px;
+  font-weight: 300;
+  color: $color-secoundary;
+  margin-bottom: 50px;
 }
 .main-btn {
-    width: 200px;
-    height: 50px;
-    font-family: $font-sahel;
-    font-size: 20px;
-    background-color: transparent;
-    border: 1px solid $color-primary;
-    cursor: pointer;
-    transition: all 0.4s;
-    color: $color-primary;
-    padding-bottom: 7px;
-    border-radius: 4px;
-    &:hover {
-        background-color: $color-primary;
-        color: $color-dark;
-    }
+  width: 200px;
+  height: 50px;
+  font-family: $font-sahel;
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid $color-primary;
+  cursor: pointer;
+  transition: all 0.4s;
+  color: $color-primary;
+  padding-bottom: 7px;
+  border-radius: 4px;
+  &:hover {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
 }
 .main-heading {
-    font-size:80px;
-    margin-bottom: 20px;
+  font-size: 80px;
+  margin-bottom: 20px;
 }
 
 .sub-heading {
-    font-size: 40px;
-    margin-bottom: 20px;
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .starts {
-    margin: 30px 0;
-    font-size: 15px;
-    color: $color-primary;
-    .star {
-        margin-left: 10px;
-    }
+  margin: 30px 0;
+  font-size: 15px;
+  color: $color-primary;
+  .star {
+    margin-left: 10px;
+  }
 }
 .description {
-    font-family: $font-nastaliq;
-    font-size: 25px;
-    color: $color-secoundary;
-    text-align: justify;
-    &::first-letter {
-        padding-right: 30px;
-    }
+  font-family: $font-nastaliq;
+  font-size: 25px;
+  color: $color-secoundary;
+  text-align: justify;
+  &::first-letter {
+    padding-right: 30px;
+  }
 }
 .mg-btn {
-    margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 .card {
-    width: 33.3%;
-    height: 50vh;
-    position: relative;
-    overflow: hidden;
-    &:hover .crad-overlay{
-        left: 0;
-    }
-   .crad-overlay {
-       @extend %fullspace;
-       @include felexlayout;
-       flex-direction: column;
-        position: absolute;
-        top: 0;
-        left: -100%;
-        color: #fff;
-        background-color: rgba($color-primary, 0.6);
-        z-index: 20;
-        transition: all 0.5s;
+  width: 33.3%;
+  height: 50vh;
+  position: relative;
+  overflow: hidden;
+  &:hover .crad-overlay {
+    left: 0;
+  }
+  .crad-overlay {
+    @extend %fullspace;
+    @include felexlayout;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    color: #fff;
+    background-color: rgba($color-primary, 0.6);
+    z-index: 20;
+    transition: all 0.5s;
 
-        .card-overlay-heading {
-            @include textStyle;
-            font-family: $font-nastaliq;
-            font-size: 70px;
-        }
-        .card-overlay-paragraph {
-            @include textStyle;
-            font-family: $font-sahel;
-            font-size: 20px;
-            margin-bottom: 30px
-        }
-        .card-overlay-btn {
-            width: 150px;
-            height: 40px;
-            color: $color-primary;
-            background-color: #fff;
-            border: 1px solid $color-primary;
-            font-family: $font-sahel;
-            font-size: 15px;
-            border-radius: 50px;
-            cursor: pointer;
-        }
+    .card-overlay-heading {
+      @include textStyle;
+      font-family: $font-nastaliq;
+      font-size: 70px;
     }
-    &-img {
-        @extend %fullspace;
-        object-fit: cover;
-        opacity: 0.5;
+    .card-overlay-paragraph {
+      @include textStyle;
+      font-family: $font-sahel;
+      font-size: 20px;
+      margin-bottom: 30px;
     }
+    .card-overlay-btn {
+      width: 150px;
+      height: 40px;
+      color: $color-primary;
+      background-color: #fff;
+      border: 1px solid $color-primary;
+      font-family: $font-sahel;
+      font-size: 15px;
+      border-radius: 50px;
+      cursor: pointer;
+    }
+  }
+  &-img {
+    @extend %fullspace;
+    object-fit: cover;
+    opacity: 0.5;
+  }
+}
+.social-media {
+  display: flex;
+  width: 300px;
+  justify-content: space-around;
+  margin-bottom: 40px;
+  &-item {
+    list-style-type: none;
+  }
+  &-link {
+    text-decoration: none;
+    font-size: 50px;
+    color: $color-secoundary;
+    transition: all 0.3s;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}
+.footer-copyright-paragraph {
+  font-family: $font-sahel;
+  font-size: 20px;
+  direction: rtl;
+  color: $color-secoundary;
+  margin-bottom: 15px;
+}
+.main-foot {
+  font-size: 50px;
+  font-family: $font-sahel;
+  color: $color-secoundary;
+}
+.sub-foot {
+    font-size: 20px;
+    color: $color-secoundary;
+    text-align: center;
 }
